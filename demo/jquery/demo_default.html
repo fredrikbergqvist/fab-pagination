@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fab-pagination.js Demo</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<article>
+<header>
+    <h1>fab-pagination.js</h1>
+
+    <p class="preamble">An accessible pagination plugin for jQuery</p>
+</header>
+<section id="defaultSetting">
+<header>
+    <h2>Demo: Default setting</h2>
+</header>
+<p>In it's default setting fab-pagination assumes that you want to paginate a table so the row tag is set to tr.
+    The pagination list is placed just above the table.</p>
+
+<div class="demo-area">
+<table class="default-table">
+<thead>
+<tr>
+    <th>
+        Column 1
+    </th>
+    <th>
+        Column 2
+    </th>
+    <th>
+        Column 3
+    </th>
+    <th>
+        Column 4
+    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Row 0</td>
+    <td>Row 0</td>
+    <td>Row 0</td>
+    <td>Row 0</td>
+</tr>
+<tr>
+    <td>Row 1</td>
+    <td>Row 1</td>
+    <td>Row 1</td>
+    <td>Row 1</td>
+</tr>
+<tr>
+    <td>Row 2</td>
+    <td>Row 2</td>
+    <td>Row 2</td>
+    <td>Row 2</td>
+</tr>
+<tr>
+    <td>Row 3</td>
+    <td>Row 3</td>
+    <td>Row 3</td>
+    <td>Row 3</td>
+</tr>
+<tr>
+    <td>Row 4</td>
+    <td>Row 4</td>
+    <td>Row 4</td>
+    <td>Row 4</td>
+</tr>
+<tr>
+    <td>Row 5</td>
+    <td>Row 5</td>
+    <td>Row 5</td>
+    <td>Row 5</td>
+</tr>
+<tr>
+    <td>Row 6</td>
+    <td>Row 6</td>
+    <td>Row 6</td>
+    <td>Row 6</td>
+</tr>
+<tr>
+    <td>Row 7</td>
+    <td>Row 7</td>
+    <td>Row 7</td>
+    <td>Row 7</td>
+</tr>
+<tr>
+    <td>Row 8</td>
+    <td>Row 8</td>
+    <td>Row 8</td>
+    <td>Row 8</td>
+</tr>
+<tr>
+    <td>Row 9</td>
+    <td>Row 9</td>
+    <td>Row 9</td>
+    <td>Row 9</td>
+</tr>
+<tr>
+    <td>Row 10</td>
+    <td>Row 10</td>
+    <td>Row 10</td>
+    <td>Row 10</td>
+</tr>
+<tr>
+    <td>Row 11</td>
+    <td>Row 11</td>
+    <td>Row 11</td>
+    <td>Row 11</td>
+</tr>
+<tr>
+    <td>Row 12</td>
+    <td>Row 12</td>
+    <td>Row 12</td>
+    <td>Row 12</td>
+</tr>
+<tr>
+    <td>Row 13</td>
+    <td>Row 13</td>
+    <td>Row 13</td>
+    <td>Row 13</td>
+</tr>
+<tr>
+    <td>Row 14</td>
+    <td>Row 14</td>
+    <td>Row 14</td>
+    <td>Row 14</td>
+</tr>
+<tr>
+    <td>Row 15</td>
+    <td>Row 15</td>
+    <td>Row 15</td>
+    <td>Row 15</td>
+</tr>
+<tr>
+    <td>Row 16</td>
+    <td>Row 16</td>
+    <td>Row 16</td>
+    <td>Row 16</td>
+</tr>
+<tr>
+    <td>Row 17</td>
+    <td>Row 17</td>
+    <td>Row 17</td>
+    <td>Row 17</td>
+</tr>
+<tr>
+    <td>Row 18</td>
+    <td>Row 18</td>
+    <td>Row 18</td>
+    <td>Row 18</td>
+</tr>
+<tr>
+    <td>Row 19</td>
+    <td>Row 19</td>
+    <td>Row 19</td>
+    <td>Row 19</td>
+</tr>
+<tr>
+    <td>Row 20</td>
+    <td>Row 20</td>
+    <td>Row 20</td>
+    <td>Row 20</td>
+</tr>
+<tr>
+    <td>Row 21</td>
+    <td>Row 21</td>
+    <td>Row 21</td>
+    <td>Row 21</td>
+</tr>
+<tr>
+    <td>Row 22</td>
+    <td>Row 22</td>
+    <td>Row 22</td>
+    <td>Row 22</td>
+</tr>
+<tr>
+    <td>Row 23</td>
+    <td>Row 23</td>
+    <td>Row 23</td>
+    <td>Row 23</td>
+</tr>
+<tr>
+    <td>Row 24</td>
+    <td>Row 24</td>
+    <td>Row 24</td>
+    <td>Row 24</td>
+</tr>
+<tr>
+    <td>Row 25</td>
+    <td>Row 25</td>
+    <td>Row 25</td>
+    <td>Row 25</td>
+</tr>
+<tr>
+    <td>Row 26</td>
+    <td>Row 26</td>
+    <td>Row 26</td>
+    <td>Row 26</td>
+</tr>
+<tr>
+    <td>Row 27</td>
+    <td>Row 27</td>
+    <td>Row 27</td>
+    <td>Row 27</td>
+</tr>
+<tr>
+    <td>Row 28</td>
+    <td>Row 28</td>
+    <td>Row 28</td>
+    <td>Row 28</td>
+</tr>
+<tr>
+    <td>Row 29</td>
+    <td>Row 29</td>
+    <td>Row 29</td>
+    <td>Row 29</td>
+</tr>
+<tr>
+    <td>Row 30</td>
+    <td>Row 30</td>
+    <td>Row 30</td>
+    <td>Row 30</td>
+</tr>
+<tr>
+    <td>Row 31</td>
+    <td>Row 31</td>
+    <td>Row 31</td>
+    <td>Row 31</td>
+</tr>
+<tr>
+    <td>Row 32</td>
+    <td>Row 32</td>
+    <td>Row 32</td>
+    <td>Row 32</td>
+</tr>
+<tr>
+    <td>Row 33</td>
+    <td>Row 33</td>
+    <td>Row 33</td>
+    <td>Row 33</td>
+</tr>
+<tr>
+    <td>Row 34</td>
+    <td>Row 34</td>
+    <td>Row 34</td>
+    <td>Row 34</td>
+</tr>
+<tr>
+    <td>Row 35</td>
+    <td>Row 35</td>
+    <td>Row 35</td>
+    <td>Row 35</td>
+</tr>
+<tr>
+    <td>Row 36</td>
+    <td>Row 36</td>
+    <td>Row 36</td>
+    <td>Row 36</td>
+</tr>
+<tr>
+    <td>Row 37</td>
+    <td>Row 37</td>
+    <td>Row 37</td>
+    <td>Row 37</td>
+</tr>
+<tr>
+    <td>Row 38</td>
+    <td>Row 38</td>
+    <td>Row 38</td>
+    <td>Row 38</td>
+</tr>
+<tr>
+    <td>Row 39</td>
+    <td>Row 39</td>
+    <td>Row 39</td>
+    <td>Row 39</td>
+</tr>
+<tr>
+    <td>Row 40</td>
+    <td>Row 40</td>
+    <td>Row 40</td>
+    <td>Row 40</td>
+</tr>
+<tr>
+    <td>Row 41</td>
+    <td>Row 41</td>
+    <td>Row 41</td>
+    <td>Row 41</td>
+</tr>
+<tr>
+    <td>Row 42</td>
+    <td>Row 42</td>
+    <td>Row 42</td>
+    <td>Row 42</td>
+</tr>
+<tr>
+    <td>Row 43</td>
+    <td>Row 43</td>
+    <td>Row 43</td>
+    <td>Row 43</td>
+</tr>
+<tr>
+    <td>Row 44</td>
+    <td>Row 44</td>
+    <td>Row 44</td>
+    <td>Row 44</td>
+</tr>
+<tr>
+    <td>Row 45</td>
+    <td>Row 45</td>
+    <td>Row 45</td>
+    <td>Row 45</td>
+</tr>
+<tr>
+    <td>Row 46</td>
+    <td>Row 46</td>
+    <td>Row 46</td>
+    <td>Row 46</td>
+</tr>
+<tr>
+    <td>Row 47</td>
+    <td>Row 47</td>
+    <td>Row 47</td>
+    <td>Row 47</td>
+</tr>
+<tr>
+    <td>Row 48</td>
+    <td>Row 48</td>
+    <td>Row 48</td>
+    <td>Row 48</td>
+</tr>
+<tr>
+    <td>Row 49</td>
+    <td>Row 49</td>
+    <td>Row 49</td>
+    <td>Row 49</td>
+</tr>
+<tr>
+    <td>Row 50</td>
+    <td>Row 50</td>
+    <td>Row 50</td>
+    <td>Row 50</td>
+</tr>
+<tr>
+    <td>Row 51</td>
+    <td>Row 51</td>
+    <td>Row 51</td>
+    <td>Row 51</td>
+</tr>
+<tr>
+    <td>Row 52</td>
+    <td>Row 52</td>
+    <td>Row 52</td>
+    <td>Row 52</td>
+</tr>
+<tr>
+    <td>Row 53</td>
+    <td>Row 53</td>
+    <td>Row 53</td>
+    <td>Row 53</td>
+</tr>
+<tr>
+    <td>Row 54</td>
+    <td>Row 54</td>
+    <td>Row 54</td>
+    <td>Row 54</td>
+</tr>
+<tr>
+    <td>Row 55</td>
+    <td>Row 55</td>
+    <td>Row 55</td>
+    <td>Row 55</td>
+</tr>
+<tr>
+    <td>Row 56</td>
+    <td>Row 56</td>
+    <td>Row 56</td>
+    <td>Row 56</td>
+</tr>
+<tr>
+    <td>Row 57</td>
+    <td>Row 57</td>
+    <td>Row 57</td>
+    <td>Row 57</td>
+</tr>
+<tr>
+    <td>Row 58</td>
+    <td>Row 58</td>
+    <td>Row 58</td>
+    <td>Row 58</td>
+</tr>
+<tr>
+    <td>Row 59</td>
+    <td>Row 59</td>
+    <td>Row 59</td>
+    <td>Row 59</td>
+</tr>
+<tr>
+    <td>Row 60</td>
+    <td>Row 60</td>
+    <td>Row 60</td>
+    <td>Row 60</td>
+</tr>
+<tr>
+    <td>Row 61</td>
+    <td>Row 61</td>
+    <td>Row 61</td>
+    <td>Row 61</td>
+</tr>
+<tr>
+    <td>Row 62</td>
+    <td>Row 62</td>
+    <td>Row 62</td>
+    <td>Row 62</td>
+</tr>
+<tr>
+    <td>Row 63</td>
+    <td>Row 63</td>
+    <td>Row 63</td>
+    <td>Row 63</td>
+</tr>
+<tr>
+    <td>Row 64</td>
+    <td>Row 64</td>
+    <td>Row 64</td>
+    <td>Row 64</td>
+</tr>
+<tr>
+    <td>Row 65</td>
+    <td>Row 65</td>
+    <td>Row 65</td>
+    <td>Row 65</td>
+</tr>
+<tr>
+    <td>Row 66</td>
+    <td>Row 66</td>
+    <td>Row 66</td>
+    <td>Row 66</td>
+</tr>
+<tr>
+    <td>Row 67</td>
+    <td>Row 67</td>
+    <td>Row 67</td>
+    <td>Row 67</td>
+</tr>
+<tr>
+    <td>Row 68</td>
+    <td>Row 68</td>
+    <td>Row 68</td>
+    <td>Row 68</td>
+</tr>
+<tr>
+    <td>Row 69</td>
+    <td>Row 69</td>
+    <td>Row 69</td>
+    <td>Row 69</td>
+</tr>
+<tr>
+    <td>Row 70</td>
+    <td>Row 70</td>
+    <td>Row 70</td>
+    <td>Row 70</td>
+</tr>
+<tr>
+    <td>Row 71</td>
+    <td>Row 71</td>
+    <td>Row 71</td>
+    <td>Row 71</td>
+</tr>
+<tr>
+    <td>Row 72</td>
+    <td>Row 72</td>
+    <td>Row 72</td>
+    <td>Row 72</td>
+</tr>
+<tr>
+    <td>Row 73</td>
+    <td>Row 73</td>
+    <td>Row 73</td>
+    <td>Row 73</td>
+</tr>
+<tr>
+    <td>Row 74</td>
+    <td>Row 74</td>
+    <td>Row 74</td>
+    <td>Row 74</td>
+</tr>
+<tr>
+    <td>Row 75</td>
+    <td>Row 75</td>
+    <td>Row 75</td>
+    <td>Row 75</td>
+</tr>
+<tr>
+    <td>Row 76</td>
+    <td>Row 76</td>
+    <td>Row 76</td>
+    <td>Row 76</td>
+</tr>
+<tr>
+    <td>Row 77</td>
+    <td>Row 77</td>
+    <td>Row 77</td>
+    <td>Row 77</td>
+</tr>
+<tr>
+    <td>Row 78</td>
+    <td>Row 78</td>
+    <td>Row 78</td>
+    <td>Row 78</td>
+</tr>
+<tr>
+    <td>Row 79</td>
+    <td>Row 79</td>
+    <td>Row 79</td>
+    <td>Row 79</td>
+</tr>
+<tr>
+    <td>Row 80</td>
+    <td>Row 80</td>
+    <td>Row 80</td>
+    <td>Row 80</td>
+</tr>
+<tr>
+    <td>Row 81</td>
+    <td>Row 81</td>
+    <td>Row 81</td>
+    <td>Row 81</td>
+</tr>
+<tr>
+    <td>Row 82</td>
+    <td>Row 82</td>
+    <td>Row 82</td>
+    <td>Row 82</td>
+</tr>
+<tr>
+    <td>Row 83</td>
+    <td>Row 83</td>
+    <td>Row 83</td>
+    <td>Row 83</td>
+</tr>
+<tr>
+    <td>Row 84</td>
+    <td>Row 84</td>
+    <td>Row 84</td>
+    <td>Row 84</td>
+</tr>
+<tr>
+    <td>Row 85</td>
+    <td>Row 85</td>
+    <td>Row 85</td>
+    <td>Row 85</td>
+</tr>
+<tr>
+    <td>Row 86</td>
+    <td>Row 86</td>
+    <td>Row 86</td>
+    <td>Row 86</td>
+</tr>
+<tr>
+    <td>Row 87</td>
+    <td>Row 87</td>
+    <td>Row 87</td>
+    <td>Row 87</td>
+</tr>
+<tr>
+    <td>Row 88</td>
+    <td>Row 88</td>
+    <td>Row 88</td>
+    <td>Row 88</td>
+</tr>
+<tr>
+    <td>Row 89</td>
+    <td>Row 89</td>
+    <td>Row 89</td>
+    <td>Row 89</td>
+</tr>
+<tr>
+    <td>Row 90</td>
+    <td>Row 90</td>
+    <td>Row 90</td>
+    <td>Row 90</td>
+</tr>
+<tr>
+    <td>Row 91</td>
+    <td>Row 91</td>
+    <td>Row 91</td>
+    <td>Row 91</td>
+</tr>
+<tr>
+    <td>Row 92</td>
+    <td>Row 92</td>
+    <td>Row 92</td>
+    <td>Row 92</td>
+</tr>
+<tr>
+    <td>Row 93</td>
+    <td>Row 93</td>
+    <td>Row 93</td>
+    <td>Row 93</td>
+</tr>
+<tr>
+    <td>Row 94</td>
+    <td>Row 94</td>
+    <td>Row 94</td>
+    <td>Row 94</td>
+</tr>
+<tr>
+    <td>Row 95</td>
+    <td>Row 95</td>
+    <td>Row 95</td>
+    <td>Row 95</td>
+</tr>
+<tr>
+    <td>Row 96</td>
+    <td>Row 96</td>
+    <td>Row 96</td>
+    <td>Row 96</td>
+</tr>
+<tr>
+    <td>Row 97</td>
+    <td>Row 97</td>
+    <td>Row 97</td>
+    <td>Row 97</td>
+</tr>
+<tr>
+    <td>Row 98</td>
+    <td>Row 98</td>
+    <td>Row 98</td>
+    <td>Row 98</td>
+</tr>
+<tr>
+    <td>Row 99</td>
+    <td>Row 99</td>
+    <td>Row 99</td>
+    <td>Row 99</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+</article>
+<script src="../../lib/jquery-1.10.2.js"></script>
+<script src="../../src/jquery/fab-pagination.jquery.js"></script>
+<script>
+
+    $(".default-table").fabPagination();
+</script>
+</body>
+</html>

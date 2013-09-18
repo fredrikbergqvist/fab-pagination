@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fab-pagination.js Demo</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<article>
+    <header>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li>
+                    <a href="#usage">Usage</a>
+                </li>
+                <li>
+                    <a href="#defaultSetting">Default setting</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>fab-pagination.js</h1>
+
+        <p class="preamble">An accessible pagination plugin for jQuery</p>
+    </header>
+
+    <section id="installation">
+        <header>
+            <h2>Installation</h2>
+        </header>
+        <p>Download the script and place it in your projects script folder.</p>
+
+        <h3>Requirements</h3>
+
+        <p>You must use the <a href="http://www.jquery.com">jQuery library</a>.</p>
+
+        <p>Tested with:</p>
+        <ul>
+            <li>jQuery 1.10.2</li>
+        </ul>
+        <h3>Restrictions</h3>
+        <p>The plugin currently only supports paginating one table/ul/etc at a time. Should you need to paginate two tables on the same page, this plugin is not for you (yet)</p>
+    </section>
+    <section id="usage">
+        <header>
+            <h2>Usage</h2>
+        </header>
+
+        <p>To use the fab-pagination plugin simply include the plugin's JavaScript file in
+            your code. Make sure the script tag is placed below jQuery.</p>
+        <code>
+            &lt;script src="path/to/scripts/fab-pagination.jquery.min.js"&gt;&lt;/script&gt;
+        </code>
+
+        <p>Then attach fab-pagination to the element you want to paginate.</p>
+        <code>
+            $("table").fabPagination();
+        </code>
+
+        <p>If you want to make any changes in the plugins behaviour you will need to change the <a href="#settings">settings</a>
+        </p>
+    </section>
+    <section id="settings">
+        <header>
+            <h2>Settings</h2>
+        </header>
+        <p>These are the default settings.</p>
+        <code>
+            {<br/>
+            itemsPerPage : 10,<br/>
+            rowType: "tbody tr",<br/>
+            paginationContainer : ".fab-pagination-container"<br/>
+            }
+        </code>
+
+        <h3>itemsPerPage</h3>
+
+        <p>The number of items you want to be displayed per page.</p>
+
+        <h3>rowType</h3>
+
+        <p>By default fab-paginator assumes you want to paginate a table, however if you want to page a list or
+            something else you will have to set the row element here (li for list etc).</p>
+
+        <h3>paginationContainer</h3>
+
+        <p>If you want to place the pagination list somewhere else you can specify a container here.</p>
+    </section>
+
+    <section>
+        <header>
+            <h2>Styling</h2>
+        </header>
+        <h3>Css-classes</h3>
+        <p>The default pagination module looks like this:</p>
+        <code>
+            &lt;ul role="navigation" aria-labelledby="fabPaginationLabel" class="fab-pagination-container"&gt;
+                &lt;li&gt;
+                    &lt;a href="#" class="fab-pagination-link-previous" rel="prev" data-from="0" data-to="0"&gt;
+                        &lt;span class="fab-pagination-audible"&gt;Previous &lt;/span&gt;&lt;span&gt;&lt;&lt;/span&gt;
+                    &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="#" class="fab-pagination-link  selected" rel="Page " data-from="0" data-to="10"&gt;
+                        &lt;span&gt;1&lt;/span&gt;
+                        &lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" class="fab-pagination-link" rel="Page " data-from="10" data-to="20"&gt;
+            &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" class="fab-pagination-link-next" rel="next" data-from="0" data-to="0"&gt;
+                &lt;span class="fab-pagination-audible"&gt;Next &lt;/span&gt;&lt;span&gt;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+
+
+    </section>
+
+    <section id="demoDefault">
+        <header>
+            <h2>Demo: Default setting</h2>
+        </header>
+        <p>In it's default setting fab-pagination assumes that you want to paginate a table so the row tag is set to tr.
+            The pagination list is placed just above the table.</p>
+        <p><a href="demo_default.html">View demo here</a></p>
+    </section>
+
+    <section id="demoList">
+        <header>
+            <h2>Demo: List</h2>
+        </header>
+
+        <p><a href="demo_list.html">View demo here</a></p>
+    </section>
+
+</article>
+</body>
+</html>
